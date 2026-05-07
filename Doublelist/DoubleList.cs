@@ -265,7 +265,7 @@ public class DoubleList<T> where T : IComparable<T>
                 }
             }
 
-            current = next;
+            current = next; // Move to the next node after potential removal 
         }
     }
 }
