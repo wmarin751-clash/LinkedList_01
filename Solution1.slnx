@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Doublelist/Doublelist.csproj" />
+  <Project Path="Program.cs/Program.cs.csproj" Id="97e02e76-4658-4976-97c8-ed572f5baef4" />
 </Solution>

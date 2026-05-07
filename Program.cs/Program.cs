@@ -13,7 +13,7 @@ do
             Console.Write("Enter a value: ");
             value = Console.ReadLine() ?? string.Empty;
             list.Add(value);
-            Console.WriteLine($"Value '{value}' was added to the list");
+
             break;
 
         case "2":
@@ -85,29 +85,23 @@ do
         case "8":
             Console.Write("Enter a value: ");
             value = Console.ReadLine() ?? string.Empty;
-            if (list.Contains(value))
-            {
-                list.RemoveOccurrence(value);
-                Console.WriteLine($"Value '{value}' was removed from the list");
-            }
-            else
-            {
-                Console.WriteLine($"Value '{value}' was not found in the list");
-            }
+
+
+            list.RemoveOccurrence(value);
+            Console.WriteLine($"Value '{value}' was removed from the list");
+
+
             break;
 
         case "9":
             Console.Write("Enter a value to remove: ");
             value = Console.ReadLine() ?? string.Empty;
-            if (list.Contains(value))
-            {
-                list.RemoveOccurrences(value);
-                Console.WriteLine($"Value '{value}' was removed from the list");
-            }
-            else
-            {
-                Console.WriteLine($"Value '{value}' was not found in the list");
-            }
+
+
+            list.RemoveOccurrences(value);
+            Console.WriteLine($"Value '{value}' was removed from the list");
+
+
             break;
 
         case "0":
