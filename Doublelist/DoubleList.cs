@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Doublelist;
+﻿namespace Doublelist;
 
 public class DoubleList<T> where T : IComparable<T>
 {
@@ -35,7 +31,7 @@ public class DoubleList<T> where T : IComparable<T>
         }
         var current = _head;
 
-        while (current.Next != null && current.Next.Data.CompareTo(data) < 0)
+        while (current.Next != null && current.Next.Data!.CompareTo(data) < 0)
         {
             current = current.Next;
         }
@@ -265,7 +261,7 @@ public class DoubleList<T> where T : IComparable<T>
                 }
             }
 
-            current = next; 
+            current = next;
         }
     }
 }
